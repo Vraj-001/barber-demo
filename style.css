@@ -68,8 +68,9 @@ section
     border-radius: 6px;
     text-decoration: none;
     font-weight: 600;
+    text-align: center;
 }
-
+/* =============================================== MAIN SERVICES ============================== */
 .cards
 {
     display: grid;
@@ -87,6 +88,33 @@ section
 .open {color: #1e8449; font-weight: 600;}
 .closed {color: var(--accent); font-weight: 600;}
 
+/* ================================================== MAIN VISIT ================================== */
+.visit-grid
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.info-item
+{
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.info-item span
+{
+    font-size: 1.4rem;
+}
+
+.info-item p
+{
+    margin: 0 0 16px;
+}
+
+
 form
 {
     display: flex;
@@ -97,9 +125,8 @@ form
 
 input, textarea
 {
-    padding: 10ox;
+    padding: 10px;
     border:1px solid #ccc;
-    border: 1px solid #ccc;
     border-radius: 6px;
     font: inherit;
 }
@@ -138,6 +165,11 @@ footer
     .cards
     {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .visit-grid
+    {
+        grid-template-columns: 1fr 1fr;
     }
 
     #hero
